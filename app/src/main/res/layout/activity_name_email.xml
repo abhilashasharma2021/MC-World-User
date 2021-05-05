@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/rlheader"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+        <TextView
+            android:id="@+id/txtHint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="Personal Details"
+            android:textColor="@color/dark"
+            android:textSize="20dp"
+            android:textStyle="normal" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/txtHint"
+            android:layout_marginTop="15dp"
+            android:background="#dbdbdb" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/txtHintAbout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlheader"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Tell us a bit more about yourself"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="normal" />
+
+
+    <LinearLayout
+        android:layout_below="@+id/txtHintAbout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:theme="@style/myTextInputLabel">
+
+
+                <EditText
+
+                    android:id="@+id/edt_full_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:fontFamily="@font/open_sans_regular"
+                    android:hint="FullName"
+                    android:maxLength="100"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="14sp">
+
+
+                </EditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/dark"
+            android:textStyle="normal"
+            android:textSize="15dp"
+            android:visibility="gone"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:text="Mobile Number"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:visibility="visible"
+            android:layout_height="wrap_content">
+
+
+            <com.rilixtech.CountryCodePicker
+                android:id="@+id/counntryPicker"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                app:ccp_defaultNameCode="IN"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/editNumber"
+                android:layout_toRightOf="@+id/counntryPicker"
+                android:layout_width="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:textSize="14dp"
+                android:singleLine="true"
+                android:maxLength="10"
+                android:hint="Mobile Number"
+                android:inputType="number"
+                android:background="@null"
+                android:layout_height="55dp"/>
+
+        </RelativeLayout>
+        <View
+            android:layout_toLeftOf="@+id/txtOr"
+            android:layout_width="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/padding_10"
+            android:layout_marginRight="@dimen/padding_10"
+            android:layout_height="1dp"
+            android:background="@color/grey"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:visibility="gone"
+                android:theme="@style/myTextInputLabel">
+
+
+                <EditText
+
+                    android:id="@+id/edt_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:fontFamily="@font/open_sans_regular"
+                    android:hint="Email"
+                    android:maxLength="100"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="14sp">
+
+
+                </EditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:theme="@style/myTextInputLabel">
+
+
+                <EditText
+
+                    android:id="@+id/edt_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:fontFamily="@font/open_sans_regular"
+                    android:hint="Password"
+                    android:maxLength="40"
+                    android:maxLines="1"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="14sp">
+
+
+                </EditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/btnContinue"
+                android:layout_width="match_parent"
+                android:translationZ="5dp"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:text="Continue"
+                android:background="@drawable/btn_select_location"
+                android:layout_height="45dp"/>
+
+
+            <ProgressBar
+               android:layout_below="@+id/btnContinue"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:id="@+id/progress"
+                android:layout_marginRight="2dp"
+                android:layout_marginLeft="2dp"
+                android:max="100"
+                android:progress="45"
+                android:indeterminate="true"
+                 android:visibility="gone"
+                android:indeterminateTint="#EE3426"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

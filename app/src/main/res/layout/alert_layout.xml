@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="15dp"
+    android:layout_marginBottom="15dp"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+
+        android:text="Alert!!!"
+        android:textColor="@color/red"
+        android:textSize="18sp"
+        android:fontFamily="@font/opensans_bold" />
+    <TextView
+        android:id="@+id/tx_alert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+          android:gravity="center"
+        android:layout_marginTop="15dp"
+         android:layout_below="@+id/tx"
+        android:text="sorry the services will come soon"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:fontFamily="@font/open_sans_regular" />
+
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerInParent="true"
+        android:textStyle="normal"
+        android:layout_below="@+id/tx_alert"
+        android:textSize="14dp"
+        android:visibility="visible"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_select_location"
+        android:textAllCaps="true"
+        android:text="Ok"/>
+</RelativeLayout>

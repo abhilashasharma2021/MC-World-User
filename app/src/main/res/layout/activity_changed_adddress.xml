@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.app.mcworlduser.Activities.ChangedAdddressActivity">
+    <RelativeLayout
+        android:id="@+id/relMap"
+        android:layout_above="@+id/relBottomLocation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/backImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="14dp"
+            android:background="?actionBarItemBackground"
+            android:tint="#fff"
+            android:src="@drawable/back_100"/>
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.app.mcworlduser.CustomMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+        <ImageView
+            android:id="@+id/marker"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/app_name"
+            android:padding="10dp"
+            android:visibility="visible"
+            android:src="@drawable/marker_150" />
+
+        <RelativeLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/circular_location"
+            android:layout_alignParentBottom="true">
+
+            <ImageView
+                android:id="@+id/imgCurrentLocation"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:padding="8dp"
+                android:src="@drawable/current"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relBottomLocation"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/marker_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="12dp"
+            android:tint="@color/colorPrimary"
+            android:src="@drawable/marker_150" />
+
+        <TextView
+            android:layout_toRightOf="@+id/marker_icon"
+            android:layout_toLeftOf="@+id/btnChangeAddress"
+            android:layout_marginRight="5dp"
+            android:id="@+id/txtLocalAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="22dp"
+            android:textColor="#222"
+            android:text="Govindpura"/>
+
+
+
+
+        <TextView
+            android:layout_below="@+id/txtLocalAddress"
+            android:id="@+id/txtAddress"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="5dp"
+            android:textSize="14dp"
+            android:textColor="#444"
+            android:text="Industrial Area,Bhopal,Mp"/>
+
+        <Button
+            android:id="@+id/btnConfirmLocation"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/txtAddress"
+            android:layout_height="45dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textAllCaps="true"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/white"
+            android:layout_marginBottom="10dp"
+            android:foreground="?actionBarItemBackground"
+            android:background="@drawable/btn_select_location"
+            android:text="Confirm Location"/>
+
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.app.mcworlduser.Activities.AboutUsActivity">
+    <RelativeLayout
+        android:id="@+id/rlheader"
+        android:layout_width="match_parent"
+        android:background="@color/colorAccent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:background="?actionBarItemBackground"
+            android:padding="10dp"
+            android:src="@drawable/back1" />
+        <TextView
+            android:id="@+id/txtHint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="About Us"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="normal" />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/rlheader"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tx_terms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:text="We are an online food &amp; grocery ordering service that helps customers find restaurants and grocery in their area, filter by cuisine, browse menus and place their orders with an option of online payment. We offer our services through mobile apps for iPhone, Android, &amp; iPad"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:fontFamily="@font/open_sans_regular" />
+
+
+            <TextView
+                android:id="@+id/tx1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:text="*MCWORLD25* was founded in 2020 by a group of young entrepreneurs who took advantage of the online food ordering opportunity that exists in the Indian market. A decade later, we desire to become a pioneer in the online food ordering service in this world."
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:fontFamily="@font/open_sans_regular" />
+
+            <TextView
+                android:id="@+id/tx3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:text="We are based in Bengaluru and currently operating across 2 pin codes:"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:fontFamily="@font/open_sans_regular" />
+            <TextView
+                android:id="@+id/tx4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="We are based in Bengaluru and currently operating across 2 pin codes:"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:fontFamily="@font/open_sans_regular" />
+            <TextView
+                android:id="@+id/tx5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="560045 &amp; 560043"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:fontFamily="@font/open_sans_regular" />
+            <TextView
+                android:id="@+id/tx6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="Our main aim is to become and remain the market leader in this world by diversifying our services portfolio and providing best-in-class customer experience."
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:fontFamily="@font/open_sans_regular" />
+
+        </LinearLayout>
+    </ScrollView>
+    <com.github.ybq.android.spinkit.SpinKitView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/spin_kit"
+        style="@style/SpinKitView.FadingCircle"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        app:SpinKit_Color="@color/yellow" />
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <!-- <string name="app_name">Mc_World_App</string>-->
+   <!-- <string name="app_name">Peru Market</string>-->
+    <string name="app_name">Eendhan</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_with_bullet">\u25A0</string>
+
+    <string name="facebook_app_id">652795142252525</string>
+    <string name="fb_login_protocol_scheme">fb652795142252525</string>
+
+</resources>
+

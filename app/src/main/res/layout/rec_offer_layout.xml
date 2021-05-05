@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:layout_below="@+id/rec_offer"
+        android:layout_width="match_parent"
+        android:elevation="6dp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#fafafa">
+
+
+            <RelativeLayout
+                android:layout_width="250dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageAnim"
+                    android:layout_width="250dp"
+                    android:visibility="gone"
+                    android:layout_height="120dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/opensans_bold"
+                    android:text="Offers"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    />
+
+
+                <TextView
+                    android:id="@+id/txt_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans_regular"
+                    android:text="offer5425874s"
+                    android:layout_below="@+id/txt"
+                    android:layout_marginLeft="15dp"
+
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    />
+
+                <TextView
+                    android:id="@+id/txt_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans_regular"
+                    android:text="2020-08-30"
+                    android:layout_below="@+id/txt_code"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="@dimen/padding_10"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    />
+
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="200dp"
+                android:layout_alignParentRight="true"
+                android:layout_height="120dp">
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="150dp"
+                    android:layout_height="120dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/cloc"/>
+                <RelativeLayout
+                    android:layout_width="120dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/back"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        android:id="@+id/txt_discount1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/open_sans_regular"
+                        android:text="Discount"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="20dp"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        />
+
+                    <TextView
+                        android:id="@+id/txt_discount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/open_sans_regular"
+                        android:text="15"
+                        android:layout_toRightOf="@+id/txt_discount1"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="20dp"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        />
+                    <TextView
+                        android:id="@+id/txt_sym"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/open_sans_regular"
+                        android:text="%"
+                        android:layout_toRightOf="@+id/txt_discount"
+                        android:layout_marginTop="20dp"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        />
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

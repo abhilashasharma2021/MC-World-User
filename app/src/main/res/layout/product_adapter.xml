@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardProducts"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="5dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginBottom="3dp"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:translationZ="3dp"
+    card_view:cardCornerRadius="2dp"
+    card_view:cardElevation="2dp"
+    card_view:cardMaxElevation="2dp">
+
+
+    <RelativeLayout
+        android:id="@+id/relMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgProducts"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"/>
+
+
+        <ImageView
+            android:id="@+id/imgLike"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/not_liked"
+            android:padding="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/imgProducts"
+            android:layout_marginLeft="10dp"/>
+
+
+        <TextView
+            android:id="@+id/productName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgProducts"
+            android:layout_marginLeft="5dp"
+            android:layout_toLeftOf="@+id/imgLike"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:textStyle="bold"
+            android:text="Chicken hopper + Chilly chicken"
+            android:textColor="@color/black"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/productDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/productName"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@+id/imgLike"
+            android:layout_marginRight="5dp"
+            android:text="2 for combos starting at Rs 91 ( 60% off)"
+            android:textColor="@color/dark"
+            android:textSize="12dp" />
+
+
+        <RelativeLayout
+            android:layout_below="@+id/productDesc"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/productPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rs 250"
+                android:layout_centerVertical="true"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="12dp" />
+
+
+            <TextView
+                android:id="@+id/btnAddToCat"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:text="Add to Cart"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/btn_add_tocart"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/btnViewToCat"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:text="Added to cart"
+                android:visibility="gone"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="3dp"
+                android:background="@drawable/view_tocart"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="10dp" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

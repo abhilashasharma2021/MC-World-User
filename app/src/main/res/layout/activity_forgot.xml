@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.app.mcworlduser.Activities.ForgotActivity">
+    <RelativeLayout
+        android:id="@+id/rlheader"
+        android:layout_width="match_parent"
+        android:background="@color/colorAccent"
+        android:layout_height="55dp">
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:background="?actionBarItemBackground"
+            android:padding="10dp"
+            android:src="@drawable/back1" />
+        <TextView
+            android:id="@+id/txtHint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="Forgot Password"
+            android:fontFamily="@font/opensans_bold"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="normal" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/txtHint"
+            android:layout_marginTop="15dp"
+            android:background="#dbdbdb" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/txtHintAbout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlheader"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="We send a short code in this Email"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="normal" />
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_below="@+id/txtHintAbout"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+          >
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:theme="@style/myTextInputLabel">
+
+
+                <EditText
+
+                    android:id="@+id/edt_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:fontFamily="@font/open_sans_regular"
+                    android:hint="Email"
+                    android:maxLength="100"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="14sp">
+
+
+                </EditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="45dp">
+
+            <Button
+                android:id="@+id/btnForgot"
+                android:layout_width="match_parent"
+                android:translationZ="5dp"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:text="Forgot Password"
+                android:background="@drawable/btn_select_location"
+                android:layout_height="50dp"/>
+
+
+
+
+            <ProgressBar
+                android:layout_below="@+id/btnForgot"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:id="@+id/progress"
+                android:layout_marginRight="2dp"
+                android:layout_marginLeft="2dp"
+                android:max="100"
+                android:progress="45"
+                android:indeterminate="true"
+                android:visibility="gone"
+                android:indeterminateTint="#EE3426"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

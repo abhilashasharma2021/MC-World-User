@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.app.mcworlduser.Fragment.CircularHomeFragment">
+
+    <com.imangazaliev.circlemenu.CircleMenu
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:openOnStart="true"
+        app:hintsEnabled="true"
+        android:id="@+id/circleMenu">
+
+        <com.imangazaliev.circlemenu.CircleMenuButton
+            android:id="@+id/Salud"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:colorNormal="#2196F3"
+            app:colorPressed="#1E88E5"
+            app:hintText="Salud"/>
+
+        <com.imangazaliev.circlemenu.CircleMenuButton
+            android:id="@+id/Comida"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:colorNormal="#4CAF50"
+            app:colorPressed="#43A047"
+            app:hintText="Comida"/>
+
+        <com.imangazaliev.circlemenu.CircleMenuButton
+            android:id="@+id/Abassotes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:colorNormal="#F44336"
+            app:colorPressed="#E53935"
+            app:hintText="Abassotes"/>
+
+        <com.imangazaliev.circlemenu.CircleMenuButton
+            android:id="@+id/Aseo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:colorNormal="#F44336"
+            app:colorPressed="#E53935"
+            app:hintText="Aseo"/>
+
+
+        <com.imangazaliev.circlemenu.CircleMenuButton
+            android:id="@+id/Productos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:colorNormal="#F44336"
+            app:colorPressed="#E53935"
+            app:hintText="Productos"/>
+
+    </com.imangazaliev.circlemenu.CircleMenu>
+</RelativeLayout>

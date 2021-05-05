@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/cardRestaurant"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_weight="1"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:translationZ="5dp"
+    card_view:cardCornerRadius="3dp"
+    card_view:cardElevation="3dp"
+    card_view:cardMaxElevation="3dp"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/VolleyImageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:scaleType="centerCrop"
+                android:src="#D116C1AA" />
+
+            <TextView
+                android:id="@+id/txtRestaurant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Restaurants"
+                android:visibility="gone"
+                android:textColor="@color/yellow"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtRestaurantTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtRestaurant"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"
+                android:text="Delivery in 25 minutes"
+                android:textColor="@color/yellow"
+                android:textSize="14dp"/>
+
+            <RelativeLayout
+                android:id="@+id/relForward"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:background="#6D303233">
+
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:padding="10dp"
+                    android:visibility="gone"
+                    android:src="@drawable/forward" />
+
+                <TextView
+                    android:id="@+id/txtCatName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/img_manage"
+                    android:text=""
+                    android:paddingLeft="15dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>

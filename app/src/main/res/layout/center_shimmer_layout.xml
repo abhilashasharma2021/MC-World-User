@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/center"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:layout_marginStart="10dp"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:translationZ="5dp">
+
+        <ImageView
+            android:id="@+id/imgAnything"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:background="@color/background" />
+
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgAnything"
+            android:layout_marginTop="10dp"
+            android:background="@color/background"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:visibility="gone"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:translationZ="5dp">
+
+        <ImageView
+            android:id="@+id/imgAnything1"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:background="@color/background" />
+
+        <TextView
+            android:id="@+id/txt_name1"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgAnything1"
+            android:layout_marginTop="10dp"
+            android:background="@color/background"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

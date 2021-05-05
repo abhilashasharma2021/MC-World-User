@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.app.mcworlduser.Activities.AboutUsActivity">
+    <RelativeLayout
+        android:id="@+id/rlheader"
+        android:layout_width="match_parent"
+        android:background="@color/colorAccent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:background="?actionBarItemBackground"
+            android:padding="10dp"
+            android:src="@drawable/back1" />
+        <TextView
+            android:id="@+id/txtHint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="Help and Support"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="normal" />
+
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_below="@+id/rlheader"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logonew"/>
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#fafafa">
+
+        <ImageView
+            android:id="@+id/VolleyImageView"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:padding="15dp"
+            android:src="@drawable/whatsapp_icon"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/VolleyImageView"
+            android:layout_toEndOf="@+id/VolleyImageView"
+            android:layout_marginLeft="20dp"
+            android:textSize="18dp"
+            android:textColor="#000"
+            android:text="Whatsapp chat support +919663760332"
+            android:id="@+id/ImageNameTextView"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="#fafafa">
+
+        <ImageView
+            android:id="@+id/VolleyImageView2"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:padding="15dp"
+            android:src="@drawable/email_icon"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/VolleyImageView2"
+            android:layout_toEndOf="@+id/VolleyImageView2"
+            android:layout_marginLeft="20dp"
+            android:textSize="18dp"
+            android:textColor="#000"
+            android:text="Email support SALES@MCWORLD.COM"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="#fafafa">
+
+        <ImageView
+            android:id="@+id/VolleyImageView3"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:padding="15dp"
+            android:src="@drawable/post_office"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/VolleyImageView3"
+            android:layout_toEndOf="@+id/VolleyImageView3"
+            android:layout_marginLeft="20dp"
+            android:textSize="18dp"
+            android:textColor="#000"
+            android:text="MCWORLD 25 E-Commerce(OPC)Pvt Ltd, 25-118/3 1st Cross,Govindpura Main Road AC Post,Bengaluru 560045"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

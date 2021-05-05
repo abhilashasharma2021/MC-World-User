@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "375244516134",
+    "firebase_url": "https://livemcworlduserandroid.firebaseio.com",
+    "project_id": "livemcworlduserandroid",
+    "storage_bucket": "livemcworlduserandroid.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:375244516134:android:a3489e29a9cc2b3b39efe7",
+        "android_client_info": {
+          "package_name": "com.app.mcworlduser"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "375244516134-htniunuc3kntu128v506brnt55bchh97.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEOY_QFOujQX-fQQuBW6NFAxY3tCLmCVA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "375244516134-htniunuc3kntu128v506brnt55bchh97.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

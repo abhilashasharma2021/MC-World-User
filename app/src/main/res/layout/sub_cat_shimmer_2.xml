@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/cardRestaurant"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:orientation="horizontal"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_weight="1"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/relMain"
+        android:layout_weight="1"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#fff">
+
+        <ImageView
+            android:id="@+id/imgProducts"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/background"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/productName"
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/imgProducts"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/background"/>
+
+        <TextView
+            android:id="@+id/productDesc"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/productName"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/background" />
+
+
+        <RelativeLayout
+            android:layout_below="@+id/productDesc"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/productPrice"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_centerVertical="true"
+                android:background="@color/background"/>
+
+
+            <TextView
+                android:id="@+id/btnAddToCat"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="3dp"
+                android:background="@color/background"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="10dp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/relSecond"
+        android:layout_weight="1"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#fff">
+
+        <ImageView
+            android:id="@+id/imgProductsSecond"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/background"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/productNameSecond"
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/imgProductsSecond"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/background"/>
+
+        <TextView
+            android:id="@+id/productDescSecond"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/productNameSecond"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/background" />
+
+
+        <RelativeLayout
+            android:layout_below="@+id/productDescSecond"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/productPriceSecond"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_centerVertical="true"
+                android:background="@color/background"/>
+
+
+            <TextView
+                android:id="@+id/btnAddToCatSecond"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="3dp"
+                android:background="@color/background"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="10dp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</LinearLayout>

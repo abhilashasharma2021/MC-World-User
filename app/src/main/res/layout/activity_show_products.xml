@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:shimmer="http://schemas.android.com/apk/res-auto"
+    tools:context="com.app.mcworlduser.Activities.ShowProducts">
+
+    <LinearLayout
+        android:id="@+id/linearHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/rl_search"
+            android:visibility="gone"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/yellow_rounded"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/edit_Search"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@null"
+                android:fontFamily="@font/open_sans_regular"
+                android:hint="Search"
+                android:paddingLeft="20dp"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/img_search"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="?actionBarItemBackground"
+                android:padding="10dp"
+                android:src="@drawable/search" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_VendorName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:layout_marginTop="5dp">
+
+
+            <ImageView
+                android:id="@+id/imgBack"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerVertical="true"
+                android:background="?actionBarItemBackground"
+                android:padding="12dp"
+                android:src="@drawable/back_100"
+                android:tint="@color/dark" />
+
+            <TextView
+                android:id="@+id/txtVendorName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/imgBack"
+                android:layout_toLeftOf="@+id/imgCart"
+                android:text="Burger King"
+                android:fontFamily="@font/opensans_bold"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <ImageView
+                android:id="@+id/imgSearch"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="?actionBarItemBackground"
+                android:padding="10dp"
+                android:src="@drawable/search"
+                android:tint="@color/dark" />
+
+
+            <ImageView
+                android:id="@+id/imgLike"
+                android:layout_width="45dp"
+                android:visibility="gone"
+                android:layout_height="45dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/imgSearch"
+                android:background="?actionBarItemBackground"
+                android:padding="10dp"
+                android:src="@drawable/img_like"
+                android:tint="@color/dark" />
+
+            <ImageView
+                android:id="@+id/imgCart"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/imgSearch"
+                android:background="?actionBarItemBackground"
+                android:padding="10dp"
+                android:src="@drawable/cart"
+                android:tint="@color/dark" />
+        </RelativeLayout>
+
+
+
+        <View
+            android:layout_below="@+id/imgBack"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:background="#dbdbdb"/>
+
+
+        <TextView
+            android:id="@+id/txtRecommend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/imgBack"
+            android:text="Recommended"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/rl_noData"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/no"/>
+    </RelativeLayout>
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmerView"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        shimmer:duration="800">
+
+        <!-- Adding 7 rows of placeholders -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <include layout="@layout/sub_cat_shimmer"/>
+            <include layout="@layout/sub_cat_shimmer_2"/>
+        </LinearLayout>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/linearHeader"
+        android:layout_marginTop="10dp"
+        android:id="@+id/recyclerview"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+        android:layout_marginBottom="25dp"
+       android:layout_gravity="center"
+       android:gravity="center"
+       android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/btn_menu"
+        android:layout_width="100dp"
+        android:textSize="14sp"
+        android:text="Menu"
+        android:visibility="gone"
+        android:background="@drawable/bluw_rounded"
+        android:layout_alignParentBottom="true"
+        android:fontFamily="@font/open_sans_regular"
+        android:textAllCaps="false"
+        android:layout_height="50dp"/>
+   </RelativeLayout>
+</LinearLayout>
